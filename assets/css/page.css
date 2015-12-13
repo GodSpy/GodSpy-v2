@@ -19,6 +19,14 @@
     }
 }
 
+.activated {
+    font-weight: normal;
+    text-decoration: none;
+    line-height: 1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+}
+
 .deactivated {
   display: none;
 }
