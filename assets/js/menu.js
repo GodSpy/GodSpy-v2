@@ -34,7 +34,7 @@ $("#cssmenu > ul > li > a").click(function() {
 } )( jQuery );
 
 $(document).ready(function() {
-  $('a').onclick(function(e) {
+  $('a').click(function(e) {
     e.preventDefault();
   });
 });
