@@ -19,6 +19,8 @@ html, body {
 }
 #cssmenu {
   width: 250px;
+}
+#cssmenu, #cssmenu ul {
   height: 100%;
 }
 #cssmenu > ul > li > a {
