@@ -1,11 +1,24 @@
-.activated {
-    position: absolute;
-    top: 0px;
-    left: 40%;
-    max-width: 500px;
-    max-height: 100%;
-    overflow-y: scroll;
+@media only screen and (max-width: 960px) {
+    .activated {
+        position: absolute;
+        top: 0px;
+        left: 40%;
+        max-width: 500px;
+        max-height: 100%;
+        overflow-y: scroll;
+    }
 }
+@media only screen and (min-width: 960px) {
+    .activated {
+        position: absolute;
+        top: 0px;
+        left: 40%;
+        max-width: 500px;
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+}
+
 .deactivated {
   display: none;
 }
