@@ -48,6 +48,5 @@ function getPage(page) {
     else {
       $('#' + page).toggleClass('deactivated activated');
     }
-    }
   });
 }
