@@ -33,6 +33,12 @@ $("#cssmenu > ul > li > a").click(function() {
 });
 } )( jQuery );
 
+$(document).ready(function() {
+  $('a').onclick(function(e) {
+    e.preventDefault();
+  });
+});
+
 function getPage(page) {
   $.post('', { action: page }).done(function(data) {
     if ($('#' + page).length == 0) {
