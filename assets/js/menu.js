@@ -40,7 +40,7 @@ $(document).ready(function() {
 });
 
 function getPage(page) {
-  var act = page.charAt(0).toUpperCase() + string.slice(1);
+  var act = page.charAt(0).toUpperCase() + page.slice(1);
   $.post('', { action: act }).done(function(data) {
     if ($('#' + page).length == 0) {
       $('.activated').toggleClass('activated deactivated');
