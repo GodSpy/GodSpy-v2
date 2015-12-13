@@ -32,6 +32,16 @@ $("#cssmenu > ul > li > a").click(function() {
 
 });
 } )( jQuery );
+
 function getPage(page) {
-  alert(page);
+  $.post('', { action: page }).done(function(data) {
+    if ($('#' + page).length == 0) {
+      $('.activated').toggleClass('activated deactivated');
+      $('body').append(data);
+    }
+    else {
+      $('#' + page).toggleClass('deactivated activated');
+    }
+    }
+  });
 }
