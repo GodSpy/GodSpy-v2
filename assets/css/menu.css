@@ -19,6 +19,7 @@ html, body {
 }
 #cssmenu {
   width: 250px;
+  height: 100%;
 }
 #cssmenu > ul > li > a {
   padding-right: 40px;
