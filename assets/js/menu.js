@@ -40,7 +40,8 @@ $(document).ready(function() {
 });
 
 function getPage(page) {
-  $.post('', { action: page }).done(function(data) {
+  var act = page.charAt(0).toUpperCase() + string.slice(1);
+  $.post('', { action: act }).done(function(data) {
     if ($('#' + page).length == 0) {
       $('.activated').toggleClass('activated deactivated');
       $('body').append(data);
