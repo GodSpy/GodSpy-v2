@@ -33,7 +33,7 @@ $("#cssmenu > ul > li > a").click(function() {
 });
 } )( jQuery );
 $(document).ready(function() { 
-  $('#cssmenu ul li a').onclick(function(e) { e.preventDefault(); })
+  $('#cssmenu ul li a').onclick(function(e) { e.preventDefault(); });
 });
 function getPage(page) {
   alert(page);
